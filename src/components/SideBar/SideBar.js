@@ -1,17 +1,19 @@
 import React from "react";
 import "./SideBar.css";
 import { Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+
 
 const SideBar = () => {
   return (
     <div className="side-bar">
       <Nav className="navigation">
-        <Nav.Link to="/">
+        <NavLink to="/Home">
           <i class="bi bi-house"></i>Home
-        </Nav.Link>
-        <Nav.Link to="/">
+        </NavLink>
+        <NavLink to="/Liquidity">
           <i class="bi bi-graph-up"></i>Liquidity
-        </Nav.Link>
+        </NavLink>
         <Nav.Link to="/">
           <i class="bi bi-arrow-left-right"></i>Swap
         </Nav.Link>

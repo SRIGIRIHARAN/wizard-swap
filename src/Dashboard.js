@@ -1,14 +1,20 @@
 import React from 'react'
-import NavBar from './components/NavBar/NavBar'
+import './App.css'
 import SideBar from './components/SideBar/SideBar'
+import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import Liquidity from './pages/Liquidity/Liquidity'
 
 const Dashboard = () => {
   return (
     <>
-        <NavBar />
+        <div className='dashboard'>
         <SideBar />
-        <Home />
+        <Routes>
+            <Route path='/Home' element={<Home />}></Route>
+            <Route path='/Liquidity' element={<Liquidity />}></Route>
+        </Routes>
+        </div>
     </>
   )
 }

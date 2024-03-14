@@ -1,0 +1,8 @@
+.home{
+    width: 100%;
+    border: 1px solid red;
+    position: relative;
+    top:70px;
+    left: 260px;
+    margin: 0 auto;
+}
